@@ -70,16 +70,20 @@ a:hover {
 .folder-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
+    gap: 32px 20px;
     margin-top: 20px;
 }
 
 .folder {
-    display: block;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 75px;
     background-color: #CBD4DA;
     color: #493329;
     padding: 25px 15px;
-    border-radius: 8px;
+    border-radius: 0 8px 8px 8px;
     font-family: 'Courier Prime', monospace;
     font-weight: bold;
     text-decoration: none;
@@ -87,9 +91,22 @@ a:hover {
     transition: background-color 0.2s;
 }
 
-.folder:hover {
+/* Small tab at the top of each folder */
+
+.folder::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 40%;
+    height: 13px;
+    background-color: #CBD4DA;
+    border-radius: 6px 6px 0 0;
+}
+
+.folder:hover,
+.folder:hover::before {
     background-color: #8D9B87;
-    color: #493329;
 }
 
 /* Keep folders readable on phones */
