@@ -58,3 +58,45 @@ a {
 a:hover {
     color: #493329;
 }
+
+/* Portfolio directory */
+
+.directory {
+    max-width: 850px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.folder-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.folder {
+    display: block;
+    background-color: #CBD4DA;
+    color: #493329;
+    padding: 25px 15px;
+    border-radius: 8px;
+    font-family: 'Courier Prime', monospace;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: background-color 0.2s;
+}
+
+.folder:hover {
+    background-color: #8D9B87;
+    color: #493329;
+}
+
+/* Keep folders readable on phones */
+
+@media (max-width: 600px) {
+    .folder-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
