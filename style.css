@@ -2,7 +2,7 @@
 body {
     background-color: #F8F6F1;
     color: #493329;
-    font-family: Georgia, serif;
+    font-family: 'Courier Prime', monospace;
     line-height: 1.6;
     margin: 0;
     padding: 40px 20px;
@@ -44,7 +44,11 @@ h2 {
     color: #493329;
     padding: 6px 16px;
     border-radius: 20px;
-    font-family: monospace;
+    font-family: 'Courier Prime', monospace;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px
 }
 
 a {
